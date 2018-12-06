@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Agregar";
+}
+
+<h2>Agregar</h2>
+
+<hr/> 
+
+<form action="@Url.Action("Agregar2")" method="post">
+
+
+    <input type="text" name="nombre" placeholder="Nombre" class="form-control" /> <br />
+    <input type="text" name="precio" class="form-control" /> <br />
+    <input type="file" name="imagen" class="form-control" />
+    <input type="text" name="describcion" placeholder="Escribe la descripcion del articulo" class="form-control" /> <br />
+
+    <input type="submit" name="agregar" class="btn btn-success" value="Agregar" />
+
+</form>
+
+
+<a href="@Url.Action("Index")">Cancelar</a>
